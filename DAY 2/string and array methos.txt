@@ -1,0 +1,63 @@
+String  Methods:
+--------------------
+trim():
+----------
+The trim() method removes whitespace from both sides of a string.
+Example:
+------------
+var str = "       Hello World!        ";
+alert(str.trim());
+
+String fromCharCode():
+-------------------------------
+The fromCharCode() method converts Unicode values into characters.
+Example:
+------------
+Convert a Unicode number into a character
+
+var res = String.fromCharCode(65);
+
+String localeCompare():
+-------------------------------
+The localeCompare() method compares two strings in the current locale.
+Example:
+-------------
+var str1 = "ab";
+var str2 = "cd";
+var n = str1.localeCompare(str2);
+
+String search():
+--------------------
+1.The search() method searches a string for a specified value,
+ and returns the position of the match.
+2.The search value can be string or a regular expression.
+3.This method returns -1 if no match is found.
+Example
+
+
+var str = "venkatsubbu";
+var n = str.search("subbu");
+
+
+Array Methods:
+--------------------
+
+splice():
+------------
+The splice() method can be used to add new items to an array.
+Example:
+------------
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+slice() :
+----------
+The slice() method slices out a piece of an array into a new array.
+Example:
+------------
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+
+Output:
+----------
+Orange,Lemon,Apple,Mango
