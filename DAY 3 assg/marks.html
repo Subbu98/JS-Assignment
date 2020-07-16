@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    var grade = window.prompt("Enter your marks: ");
+    var str = grade;
+    switch(true){
+
+        // If score is 70 or greater
+        case grade >= 70: 
+        console.log("Marks are "+grade.substring(0,grade.length)+
+        " and grade is "+grade.substring(grade.length)+"A");
+        break;
+        // If score is 50 or greater
+        case grade >= 50:
+        console.log("Marks are "+grade.substring(0,grade.length)+
+        " and grade is "+grade.substring(grade.length)+"B");
+        break;
+        // If score is 40 or greater
+        case grade >= 40:
+        console.log("Marks are "+grade.substring(0,grade.length)+
+        " and grade is "+grade.substring(grade.length)+"C");
+        break;
+    
+        // Anything 39 or below is failing
+        default:
+        console.log("Marks are "+grade.substring(0,grade.length)+
+        " and grade is "+grade.substring(grade.length)+"F");
+
+    }
+
+</script>
+</body>
+</html>
