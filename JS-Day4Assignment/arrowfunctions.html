@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JavaScript ArrowFunction program</title>
+</head>
+<body>
+  <script>
+      function ask(question, yes, no){
+          if(confirm(question)) yes();
+          else no();
+      }
+
+      ask("Do you agree?",
+      () => alert("You Agreed."),
+      () => alert("You cancelled the execution."));
+
+  </script>
+</body>
+</html>

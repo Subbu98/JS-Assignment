@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JavaScript recursive program</title>
+</head>
+<body>
+  <script>
+    var number = (function ask() {
+        var n = prompt('Enter Number greater than 100:');
+        return isNaN(n) || +n < 100 || +n < 1 ? ask() : n;
+    }());
+</script>
+</body>
+</html>

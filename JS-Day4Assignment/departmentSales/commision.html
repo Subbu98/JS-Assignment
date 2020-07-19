@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JavaScript Commission program</title>
+</head>
+<body>
+  <script>
+        var enterNumber = prompt("Enter sales number: ");
+        var salary = 10000;
+
+        
+            if(enterNumber<=5000){
+                 var commission = (2/100)*enterNumber;
+                 console.log("Your 2% commission is: "+commission);
+                 console.log("Your Bonus is : "+(salary+commission));
+            }
+
+            if(enterNumber>5000 && enterNumber<=10000){
+                 var commission = (5/100)*enterNumber;
+                 console.log("Your 5% commission is: "+commission);
+                 console.log("Your Bonus is : "+(salary+commission));
+            }
+
+            if(enterNumber>10000 && enterNumber<=20000){
+                 var commission = (7/100)*enterNumber;
+                 console.log("Your 5% commission is: "+commission);
+                 console.log("Your Bonus is : "+(salary+commission));
+            }
+
+            if(enterNumber>20000){
+                 var commission = (10/100)*enterNumber;
+                 console.log("Your 5% commission is: "+commission);
+                 console.log("Your Bonus is : "+(salary+commission));
+            }
+
+        
+</script>
+</body>
+</html>
